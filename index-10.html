@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home — Classroom AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-photo"></div>
+<div class="ambient">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="brand" style="cursor:pointer;">
+      <div class="brand-mark"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#04060c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px;"><path d="M2 9 12 4l10 5-10 5-10-5z"/><path d="M6 11.5V17c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 9v6"/></svg></div>
+      Classroom<span style="color:var(--cyan)">AI</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="active"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg>Home</a>
+      <a href="events.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Events</a>
+      <a href="announcements.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6a1 1 0 0 0 1 1h3l7 4V4L7 8H4a1 1 0 0 0-1 1z"/><path d="M15 9a3 3 0 0 1 0 6"/></svg>Announcements</a>
+      <a href="activities.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3 6 1 1 2-2M3 12l1 1 2-2M3 18l1 1 2-2"/></svg>Activities</a>
+      <a href="about.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      <div class="avatar-pill">C</div>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <!-- HOME / HERO -->
+  <section class="hero" id="home">
+    <div class="eyebrow reveal"><span class="dot"></span>MONDAY · 7:42 AM</div>
+    <h1 class="reveal">Good morning, Carl! 👋</h1>
+    <p class="reveal">Want to learn something new?</p>
+  </section>
+
+  <!-- NEWS + WEATHER -->
+  <section class="section" id="news">
+    <div class="dash-row">
+      <div>
+        <div class="section-head reveal">
+          <h2><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M7 12h6M7 16h10M16 7V3H9v4"/></svg> TV News <span class="tag">— LIVE FEED</span></h2>
+          <a href="#" class="see-all">View all news →</a>
+        </div>
+        <div class="news-scroll reveal">
+
+          <div class="news-card card">
+            <div class="news-thumb" style="background:linear-gradient(135deg,#1b3a6b,#0a1830);">
+              <span class="news-cat" style="background:rgba(251,113,133,.22);color:var(--coral);">Philippines</span>
+            </div>
+            <div class="news-body">
+              <h3>Senate approves ₱6.3T national budget for 2027</h3>
+              <div class="news-meta"><span>ABS-CBN News</span><span>2h ago</span></div>
+            </div>
+          </div>
+
+          <div class="news-card card">
+            <div class="news-thumb" style="background:linear-gradient(135deg,#0e3b52,#08202f);">
+              <span class="news-cat" style="background:rgba(34,211,238,.22);color:var(--cyan);">Weather</span>
+            </div>
+            <div class="news-body">
+              <h3>Tropical Storm "Igme" intensifies, floods expected in Bicol</h3>
+              <div class="news-meta"><span>PAGASA</span><span>4h ago</span></div>
+            </div>
+          </div>
+
+          <div class="news-card card">
+            <div class="news-thumb" style="background:linear-gradient(135deg,#4a2d0a,#231205);">
+              <span class="news-cat" style="background:rgba(251,191,90,.22);color:var(--amber);">Heat Index</span>
+            </div>
+            <div class="news-body">
+              <h3>Heat index hits "danger" level in Metro Manila, classes shift online</h3>
+              <div class="news-meta"><span>GMA News</span><span>5h ago</span></div>
+            </div>
+          </div>
+
+          <div class="news-card card">
+            <div class="news-thumb" style="background:linear-gradient(135deg,#3a1414,#1a0808);">
+              <span class="news-cat" style="background:rgba(251,113,133,.22);color:var(--coral);">Disaster</span>
+            </div>
+            <div class="news-body">
+              <h3>Magnitude 5.4 earthquake jolts Batangas, no damage reported</h3>
+              <div class="news-meta"><span>PHIVOLCS</span><span>7h ago</span></div>
+            </div>
+          </div>
+
+          <div class="news-card card">
+            <div class="news-thumb" style="background:linear-gradient(135deg,#241b4a,#100b28);">
+              <span class="news-cat" style="background:rgba(139,140,247,.22);color:var(--violet);">World / Tech</span>
+            </div>
+            <div class="news-body">
+              <h3>New AI model breakthrough promises faster classroom translation tools</h3>
+              <div class="news-meta"><span>Reuters</span><span>9h ago</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- WEATHER -->
+      <div class="weather-card card reveal">
+        <div class="weather-top">
+          <div>
+            <div class="weather-loc">📍 Quezon City, PH</div>
+            <div class="weather-temp">32°<span style="font-size:22px;">C</span></div>
+            <div class="weather-cond">Partly Cloudy</div>
+          </div>
+          <div class="weather-icon"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" style="width:40px;height:40px;color:var(--amber);"><circle cx="9" cy="9" r="3.2" fill="currentColor" stroke="none" opacity=".9"/><path d="M9 3v1.4M9 12.6V14M3 9h1.4M12.6 9H14M4.8 4.8l1 1M13.2 4.8l-1 1" stroke="var(--amber)"/><path d="M8 19a4 4 0 0 1 .5-7.97A5 5 0 0 1 18 13a3.5 3.5 0 0 1-.5 6.98H8z" fill="none" stroke="var(--text-dim)"/></svg></div>
+        </div>
+        <div class="weather-grid">
+          <div class="weather-stat">
+            <div class="label">Heat Index</div>
+            <div class="val warn">42°C</div>
+          </div>
+          <div class="weather-stat">
+            <div class="label">Humidity</div>
+            <div class="val">78%</div>
+          </div>
+          <div class="weather-stat">
+            <div class="label">Wind</div>
+            <div class="val">14 km/h</div>
+          </div>
+          <div class="weather-stat">
+            <div class="label">Updated</div>
+            <div class="val" style="font-size:13px;">7:30 AM</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTINUE LEARNING -->
+  <section class="section" id="subjects">
+    <div class="section-head reveal">
+      <h2><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> Continue Learning</h2>
+      <a href="#" class="see-all">All subjects →</a>
+    </div>
+    <div class="subject-grid reveal">
+
+      <div class="subject-card card">
+        <div class="subject-icon" style="background:rgba(34,211,238,.14);color:var(--cyan);"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="1.6" fill="currentColor" stroke="none"/><ellipse cx="12" cy="12" rx="9" ry="3.8"/><ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.8" transform="rotate(120 12 12)"/></svg></div>
+        <div>
+          <h3>Physics</h3>
+          <div class="sub">Ch. 4 — Newton's Laws</div>
+        </div>
+        <div>
+          <div class="progress-track"><div class="progress-fill" style="width:64%;"></div></div>
+          <div class="progress-label"><span>64%</span><span>25 min left</span></div>
+        </div>
+      </div>
+
+      <div class="subject-card card">
+        <div class="subject-icon" style="background:rgba(74,222,128,.14);color:var(--green);"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6M10 2v6l-5.5 9.5A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-3.5L14 8V2"/><path d="M8.5 15h7"/></svg></div>
+        <div>
+          <h3>General Science</h3>
+          <div class="sub">Ch. 2 — Cell Structures</div>
+        </div>
+        <div>
+          <div class="progress-track"><div class="progress-fill" style="width:41%;"></div></div>
+          <div class="progress-label"><span>41%</span><span>40 min left</span></div>
+        </div>
+      </div>
+
+      <div class="subject-card card">
+        <div class="subject-icon" style="background:rgba(139,140,247,.14);color:var(--violet);"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+        <div>
+          <h3>English</h3>
+          <div class="sub">Figurative Language</div>
+        </div>
+        <div>
+          <div class="progress-track"><div class="progress-fill" style="width:80%;"></div></div>
+          <div class="progress-label"><span>80%</span><span>10 min left</span></div>
+        </div>
+      </div>
+
+      <div class="subject-card card">
+        <div class="subject-icon" style="background:rgba(251,191,90,.14);color:var(--amber);"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9z"/></svg></div>
+        <div>
+          <h3>Social Science</h3>
+          <div class="sub">Philippine Revolution</div>
+        </div>
+        <div>
+          <div class="progress-track"><div class="progress-fill" style="width:22%;"></div></div>
+          <div class="progress-label"><span>22%</span><span>55 min left</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- AI STUDY ASSISTANT -->
+  <section class="section">
+    <div class="ai-card card reveal">
+      <div class="ai-glow"></div>
+      <div class="ai-text">
+        <h2>AI Study Assistant 🤖</h2>
+        <p>Upload your learning material and let AI turn it into a reviewer, flashcards, quizzes, and summaries.</p>
+        <div class="ai-actions">
+          <button class="btn btn-primary" id="uploadBtn"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg> Upload Material</button>
+          <button class="btn btn-ghost">See examples</button>
+        </div>
+        <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt,image/*">
+      </div>
+      <div>
+        <div class="ai-canvas-wrap"><canvas id="constellation"></canvas></div>
+        <div class="upload-hint">PDF · DOCX · TXT · IMAGES</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE PREVIEW -->
+  <section class="section" id="schedule">
+    <div class="section-head reveal">
+      <h2><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg> Upcoming Schedule</h2>
+      <a href="events.html" class="see-all">Full calendar →</a>
+    </div>
+
+    <div class="schedule-tabs reveal" id="scheduleTabs">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="exam">Exams</button>
+      <button class="tab-btn" data-filter="assignment">Assignments</button>
+      <button class="tab-btn" data-filter="event">Events</button>
+      <button class="tab-btn" data-filter="birthday">Birthdays 🎂</button>
+    </div>
+
+    <div class="schedule-list reveal" id="scheduleList">
+
+      <div class="sched-item card" data-type="exam">
+        <div class="sched-date"><div class="d">21</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>Physics — Long Quiz #3</h4><div class="meta">Newton's Laws · Room 204</div></div>
+        <div class="sched-badge" style="background:rgba(251,113,133,.16);color:var(--coral);">Exam</div>
+      </div>
+
+      <div class="sched-item card" data-type="assignment">
+        <div class="sched-date"><div class="d">22</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>English Essay — Figurative Language</h4><div class="meta">Due 11:59 PM · Google Classroom</div></div>
+        <div class="sched-badge" style="background:rgba(34,211,238,.16);color:var(--cyan);">Assignment</div>
+      </div>
+
+      <div class="sched-item card" data-type="birthday">
+        <div class="sched-date"><div class="d">23</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>Nina's Birthday 🎂</h4><div class="meta">Say hi in Group Chat!</div></div>
+        <div class="sched-badge" style="background:rgba(251,191,90,.16);color:var(--amber);">Birthday</div>
+      </div>
+
+      <div class="sched-item card" data-type="event">
+        <div class="sched-date"><div class="d">25</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>Intramurals Opening Program</h4><div class="meta">8:00 AM · School Grounds</div></div>
+        <div class="sched-badge" style="background:rgba(139,140,247,.16);color:var(--violet);">Event</div>
+      </div>
+
+      <div class="sched-item card" data-type="exam">
+        <div class="sched-date"><div class="d">28</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>Social Science — Chapter Exam</h4><div class="meta">Philippine Revolution · Room 108</div></div>
+        <div class="sched-badge" style="background:rgba(251,113,133,.16);color:var(--coral);">Exam</div>
+      </div>
+
+      <div class="sched-item card" data-type="assignment">
+        <div class="sched-date"><div class="d">29</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>General Science Lab Report</h4><div class="meta">Cell Structures · Submit as PDF</div></div>
+        <div class="sched-badge" style="background:rgba(34,211,238,.16);color:var(--cyan);">Assignment</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    Classroom AI · Frontend preview · Backend, auth & AI features connect later — <span class="mono">v0.2.0</span>
+  </footer>
+</div>
+
+<!-- FLOATING CHAT -->
+<button class="chat-fab" id="chatFab" aria-label="Open group chat">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#04060c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 9 9 0 0 1-3.2-.6L3 21l1.7-5.1A8.4 8.4 0 1 1 21 11.5z"/></svg>
+  <span class="badge">4</span>
+</button>
+
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">
+    <div class="chat-head-info">
+      <div class="avatar-pill" style="width:32px;height:32px;font-size:12px;">10A</div>
+      <div>
+        <h4>Section 10-A · Group Chat</h4>
+        <div class="status"><span class="dot"></span>12 online</div>
+      </div>
+    </div>
+    <button class="chat-close" id="chatClose">✕</button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="msg">
+      <div class="msg-avatar" style="background:var(--amber);">JM</div>
+      <div><div class="who">Jamie</div><div class="bubble">anyone finished the physics reviewer yet? 😭</div></div>
+    </div>
+    <div class="msg">
+      <div class="msg-avatar" style="background:var(--cyan);">AL</div>
+      <div><div class="who">Alex</div><div class="bubble">still on Newton's 2nd law, want to study call later?</div></div>
+    </div>
+    <div class="msg me">
+      <div class="msg-avatar" style="background:var(--violet);">C</div>
+      <div><div class="bubble">sure! also don't forget nina's bday tomorrow 🎂</div></div>
+    </div>
+    <div class="msg">
+      <div class="msg-avatar" style="background:var(--green);">NI</div>
+      <div><div class="who">Nina</div><div class="bubble">omg you guys remembered 🥹</div></div>
+    </div>
+  </div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" placeholder="Message the class…">
+    <button class="chat-send" id="chatSend">➤</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activities — Classroom AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-photo"></div>
+<div class="ambient">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="brand" style="cursor:pointer;">
+      <div class="brand-mark"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#04060c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px;"><path d="M2 9 12 4l10 5-10 5-10-5z"/><path d="M6 11.5V17c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 9v6"/></svg></div>
+      Classroom<span style="color:var(--cyan)">AI</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg>Home</a>
+      <a href="events.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Events</a>
+      <a href="announcements.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6a1 1 0 0 0 1 1h3l7 4V4L7 8H4a1 1 0 0 0-1 1z"/><path d="M15 9a3 3 0 0 1 0 6"/></svg>Announcements</a>
+      <a href="activities.html" class="active"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3 6 1 1 2-2M3 12l1 1 2-2M3 18l1 1 2-2"/></svg>Activities</a>
+      <a href="about.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      <div class="avatar-pill">C</div>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <section class="hero page-hero">
+    <div class="eyebrow reveal"><span class="dot"></span>CLASS &amp; CLUB LIFE</div>
+    <h1 class="reveal">Activities</h1>
+    <p class="reveal">Quizzes, projects, and club activities — both what's coming up and what's already wrapped.</p>
+  </section>
+
+  <section class="section">
+    <div class="schedule-tabs reveal" id="activityTabs">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="upcoming">Upcoming</button>
+      <button class="tab-btn" data-filter="past">Past</button>
+    </div>
+
+    <div class="schedule-list reveal" id="activityList">
+      <div class="activity-item card" data-status="upcoming">
+        <div class="sched-date"><div class="d">21</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>Physics Long Quiz #3</h4><div class="meta">Newton's Laws · Room 204</div></div>
+        <div class="activity-tag">Physics</div>
+        <div class="activity-status upcoming">Upcoming</div>
+      </div>
+      <div class="activity-item card" data-status="upcoming">
+        <div class="sched-date"><div class="d">22</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>English Essay Submission</h4><div class="meta">Figurative Language · Google Classroom</div></div>
+        <div class="activity-tag">English</div>
+        <div class="activity-status upcoming">Upcoming</div>
+      </div>
+      <div class="activity-item card" data-status="upcoming">
+        <div class="sched-date"><div class="d">25</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>Science Club Meeting</h4><div class="meta">Cell Model Building Workshop</div></div>
+        <div class="activity-tag">Club</div>
+        <div class="activity-status upcoming">Upcoming</div>
+      </div>
+      <div class="activity-item card" data-status="upcoming">
+        <div class="sched-date"><div class="d">29</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>General Science Lab Report</h4><div class="meta">Cell Structures · Submit as PDF</div></div>
+        <div class="activity-tag">Science</div>
+        <div class="activity-status upcoming">Upcoming</div>
+      </div>
+      <div class="activity-item card is-past" data-status="past">
+        <div class="sched-date"><div class="d">5</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>Math Club Problem-Solving Contest</h4><div class="meta">Placed 2nd overall · Room 108</div></div>
+        <div class="activity-tag">Club</div>
+        <div class="activity-status past">Past</div>
+      </div>
+      <div class="activity-item card is-past" data-status="past">
+        <div class="sched-date"><div class="d">8</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>Social Science Group Project</h4><div class="meta">Philippine Revolution Timeline · Submitted</div></div>
+        <div class="activity-tag">Social Science</div>
+        <div class="activity-status past">Past</div>
+      </div>
+      <div class="activity-item card is-past" data-status="past">
+        <div class="sched-date"><div class="d">12</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>English Recitation Activity</h4><div class="meta">Figurative Language · Completed</div></div>
+        <div class="activity-tag">English</div>
+        <div class="activity-status past">Past</div>
+      </div>
+      <div class="activity-item card is-past" data-status="past">
+        <div class="sched-date"><div class="d">14</div><div class="m">Aug</div></div>
+        <div class="sched-mid"><h4>Physics Problem Set #2</h4><div class="meta">Newton's Laws · Checked</div></div>
+        <div class="activity-tag">Physics</div>
+        <div class="activity-status past">Past</div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    Classroom AI · Frontend preview · Activity records are a frontend preview — <span class="mono">v0.2.0</span>
+  </footer>
+</div>
+
+<!-- FLOATING CHAT -->
+<button class="chat-fab" id="chatFab" aria-label="Open group chat">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#04060c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 9 9 0 0 1-3.2-.6L3 21l1.7-5.1A8.4 8.4 0 1 1 21 11.5z"/></svg>
+  <span class="badge">4</span>
+</button>
+
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">
+    <div class="chat-head-info">
+      <div class="avatar-pill" style="width:32px;height:32px;font-size:12px;">10A</div>
+      <div>
+        <h4>Section 10-A · Group Chat</h4>
+        <div class="status"><span class="dot"></span>12 online</div>
+      </div>
+    </div>
+    <button class="chat-close" id="chatClose">✕</button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="msg">
+      <div class="msg-avatar" style="background:var(--amber);">JM</div>
+      <div><div class="who">Jamie</div><div class="bubble">anyone finished the physics reviewer yet? 😭</div></div>
+    </div>
+    <div class="msg">
+      <div class="msg-avatar" style="background:var(--cyan);">AL</div>
+      <div><div class="who">Alex</div><div class="bubble">still on Newton's 2nd law, want to study call later?</div></div>
+    </div>
+    <div class="msg me">
+      <div class="msg-avatar" style="background:var(--violet);">C</div>
+      <div><div class="bubble">sure! also don't forget nina's bday tomorrow 🎂</div></div>
+    </div>
+    <div class="msg">
+      <div class="msg-avatar" style="background:var(--green);">NI</div>
+      <div><div class="who">Nina</div><div class="bubble">omg you guys remembered 🥹</div></div>
+    </div>
+  </div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" placeholder="Message the class…">
+    <button class="chat-send" id="chatSend">➤</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

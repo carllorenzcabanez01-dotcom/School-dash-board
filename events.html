@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events — Classroom AI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="bg-photo"></div>
+<div class="ambient">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="brand" style="cursor:pointer;">
+      <div class="brand-mark"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#04060c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:17px;height:17px;"><path d="M2 9 12 4l10 5-10 5-10-5z"/><path d="M6 11.5V17c0 1.5 2.7 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 9v6"/></svg></div>
+      Classroom<span style="color:var(--cyan)">AI</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 10v10a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1V10"/></svg>Home</a>
+      <a href="events.html" class="active"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Events</a>
+      <a href="announcements.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6a1 1 0 0 0 1 1h3l7 4V4L7 8H4a1 1 0 0 0-1 1z"/><path d="M15 9a3 3 0 0 1 0 6"/></svg>Announcements</a>
+      <a href="activities.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3 6 1 1 2-2M3 12l1 1 2-2M3 18l1 1 2-2"/></svg>Activities</a>
+      <a href="about.html"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 16v-4M12 8h.01"/></svg>About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      <div class="avatar-pill">C</div>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <section class="hero page-hero">
+    <div class="eyebrow reveal"><span class="dot"></span>SCHOOL CALENDAR</div>
+    <h1 class="reveal">Events</h1>
+    <p class="reveal">Everything happening around campus this term — assemblies, celebrations, sports, and meetings.</p>
+  </section>
+
+  <section class="section">
+    <div class="month-label reveal">August 2026</div>
+    <div class="reveal">
+      <div class="event-item card">
+        <div class="sched-date"><div class="d">21</div><div class="m">Aug</div></div>
+        <div class="sched-mid">
+          <h4>Physics Long Quiz — Auditorium Prep</h4>
+          <div class="meta">10:00 AM · Auditorium</div>
+          <p>Facilities setup and rehearsal ahead of next week's assembly. Staff and student council volunteers welcome.</p>
+        </div>
+        <div class="sched-badge" style="background:rgba(139,140,247,.16);color:var(--violet);">Meeting</div>
+      </div>
+      <div class="event-item card">
+        <div class="sched-date"><div class="d">25</div><div class="m">Aug</div></div>
+        <div class="sched-mid">
+          <h4>Intramurals Opening Program</h4>
+          <div class="meta">8:00 AM · School Grounds</div>
+          <p>Parade of athletes, lighting of the torch, and the opening game of the year-long sports fest.</p>
+        </div>
+        <div class="sched-badge" style="background:rgba(13,147,181,.16);color:var(--cyan);">Sports</div>
+      </div>
+      <div class="event-item card">
+        <div class="sched-date"><div class="d">28</div><div class="m">Aug</div></div>
+        <div class="sched-mid">
+          <h4>Buwan ng Wika Culmination</h4>
+          <div class="meta">1:00 PM · Covered Court</div>
+          <p>Cultural showcase featuring folk dances, spoken word, and the Sagisag ng Wika costume parade.</p>
+        </div>
+        <div class="sched-badge" style="background:rgba(221,143,31,.16);color:var(--amber);">Celebration</div>
+      </div>
+    </div>
+
+    <div class="month-label reveal">September 2026</div>
+    <div class="reveal">
+      <div class="event-item card">
+        <div class="sched-date"><div class="d">4</div><div class="m">Sep</div></div>
+        <div class="sched-mid">
+          <h4>PTA General Assembly</h4>
+          <div class="meta">9:00 AM · Gymnasium</div>
+          <p>Quarterly meeting for parents and guardians covering academic updates and the canteen fund report.</p>
+        </div>
+        <div class="sched-badge" style="background:rgba(139,140,247,.16);color:var(--violet);">Meeting</div>
+      </div>
+      <div class="event-item card">
+        <div class="sched-date"><div class="d">11</div><div class="m">Sep</div></div>
+        <div class="sched-mid">
+          <h4>Foundation Day Fair</h4>
+          <div class="meta">7:00 AM · School Grounds</div>
+          <p>Booths, games, and a mini food fair run by each section to celebrate the school's founding.</p>
+        </div>
+        <div class="sched-badge" style="background:rgba(221,143,31,.16);color:var(--amber);">Celebration</div>
+      </div>
+      <div class="event-item card">
+        <div class="sched-date"><div class="d">18</div><div class="m">Sep</div></div>
+        <div class="sched-mid">
+          <h4>Fire & Earthquake Drill</h4>
+          <div class="meta">10:30 AM · All Buildings</div>
+          <p>Mandatory campus-wide safety drill in coordination with the Cabadbaran City DRRMO.</p>
+        </div>
+        <div class="sched-badge" style="background:rgba(225,77,103,.16);color:var(--coral);">Advisory</div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    Classroom AI · Frontend preview · Calendar data is a frontend preview — <span class="mono">v0.2.0</span>
+  </footer>
+</div>
+
+<!-- FLOATING CHAT -->
+<button class="chat-fab" id="chatFab" aria-label="Open group chat">
+  <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#04060c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:24px;height:24px;"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 9 9 0 0 1-3.2-.6L3 21l1.7-5.1A8.4 8.4 0 1 1 21 11.5z"/></svg>
+  <span class="badge">4</span>
+</button>
+
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">
+    <div class="chat-head-info">
+      <div class="avatar-pill" style="width:32px;height:32px;font-size:12px;">10A</div>
+      <div>
+        <h4>Section 10-A · Group Chat</h4>
+        <div class="status"><span class="dot"></span>12 online</div>
+      </div>
+    </div>
+    <button class="chat-close" id="chatClose">✕</button>
+  </div>
+  <div class="chat-body" id="chatBody">
+    <div class="msg">
+      <div class="msg-avatar" style="background:var(--amber);">JM</div>
+      <div><div class="who">Jamie</div><div class="bubble">anyone finished the physics reviewer yet? 😭</div></div>
+    </div>
+    <div class="msg">
+      <div class="msg-avatar" style="background:var(--cyan);">AL</div>
+      <div><div class="who">Alex</div><div class="bubble">still on Newton's 2nd law, want to study call later?</div></div>
+    </div>
+    <div class="msg me">
+      <div class="msg-avatar" style="background:var(--violet);">C</div>
+      <div><div class="bubble">sure! also don't forget nina's bday tomorrow 🎂</div></div>
+    </div>
+    <div class="msg">
+      <div class="msg-avatar" style="background:var(--green);">NI</div>
+      <div><div class="who">Nina</div><div class="bubble">omg you guys remembered 🥹</div></div>
+    </div>
+  </div>
+  <div class="chat-input-row">
+    <input type="text" id="chatInput" placeholder="Message the class…">
+    <button class="chat-send" id="chatSend">➤</button>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
